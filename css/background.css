@@ -1,0 +1,25 @@
+@import url("./logo.css");
+
+body{
+    height: 100vh;
+    background-color: var(--azul);
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-image: url('../img/backgroundRight.png'), url('../img/backgroundLeft.png');
+    background-position: right, left top;
+    background-repeat: no-repeat;
+    background-size: 80px, 333px;
+}
+
+@media screen and (min-width:491px) {
+    body{
+        background-size: unset;
+    }
+    
+}
+
+
+
+/* height pode ser 100vh */

@@ -1,0 +1,23 @@
+footer{
+    width: 100%;
+    height: 5rem;
+    background-color: var(--verde);
+    display: flex;
+}
+
+footer span{
+    font-size: 1.125rem;
+    color: #ffff;
+    margin: auto;
+}
+
+.bgLeft{
+    position: absolute;
+    z-index: -1;
+}
+
+.bgRight{
+    z-index: -1;
+    position: relative;
+    float: right;
+}

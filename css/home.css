@@ -1,0 +1,158 @@
+@import url("./background.css");
+@import url("./header.css");
+@import url("./footer.css");
+@import url("./botao.css");
+@import url("./var.css");
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: none, url('../img/backgroundLeft.png');
+    background-color: #ffff;
+}
+
+
+main{
+    width: 100%;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 130px;
+}
+
+main p{
+    width: 226px;
+    font-size: 1rem;
+    color: var(--azul);
+    text-align: center;
+    margin: 0 auto;
+}
+
+.ListPets{
+    width: 100%;
+}
+
+.ListPets ul{
+    width: 100%;
+}
+
+.pet{
+    height: 196px;
+    display: flex;
+    text-decoration: none;
+    background-color: var(--cinzaClaroFundo);
+    margin-top: 19px;
+}
+
+.pet img{
+    width: 148px;
+    height: 148px;
+    margin: auto;
+}
+
+.petsTexto{
+    width: 140px;
+    height: 140px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.petsTexto p{
+    width: unset;
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 0;
+    text-align: start;
+}
+
+.petsTexto div:nth-child(2){
+    display: flex;
+    flex-direction: column;
+
+}
+
+.petsTexto span{
+    font-size: 0.875rem;
+    color: var(--cinza);
+}
+
+br{
+    display: none;
+}
+
+.contato{
+    display: flex;
+    flex-direction: column;
+}
+
+.contato span{
+    font-size: 0.75rem;
+}
+
+.contato a{
+    width: 140px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contato svg{
+    width: 18px;
+    height: 18px;
+}
+
+.contato p{
+    font-size: 0.625rem;
+}
+
+@media screen and (min-width: 768px){
+    main{
+        margin-bottom: 32px;
+    }
+
+    main p{
+        width: 373px;
+        font-size: 1.125rem;
+    }
+
+    br{
+        display: block;
+    }
+    
+    .ListPets{
+        width: 705px;
+        margin: 0 auto;
+    }
+
+    .ListPets ul{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 16px;
+    }
+
+    .pet{
+        width: 344px;
+        height: 196px;
+    }
+}
+
+@media screen and (min-width: 1440px){
+    main{
+        margin-bottom: 60px;
+    }
+
+    .ListPets{
+        width: 1121px;
+    }
+
+    .pet{
+        width: 363px;
+        height: 196px;
+        margin-top: 0;
+    }
+}

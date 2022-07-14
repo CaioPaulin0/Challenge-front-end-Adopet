@@ -1,0 +1,132 @@
+@import url("./background.css");
+@import url("./header.css");
+@import url("./footer.css");
+@import url("./var.css");
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #ffff;
+    color: var(--azul);
+    background-image: url("../img/backgroundPata.png"), url('../img/backgroundRight.png'), url('../img/backgroundLeft.png');
+    background-position: top right, right, left top;
+    background-size: 120px, 82px, 370px;
+    background-color: #ffff;
+}
+
+main{
+    width: 312px;
+    height: 540px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+section{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+section p, span{
+    text-align: center;
+}
+
+section svg{
+    margin: 0 auto;
+}
+
+form {
+    width: 312px;
+    height: 376px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+form label{
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--cinza);
+    margin: 0 auto;
+}
+
+form input{
+    font-size: 0.75rem;
+    padding: 7px;
+    border: none;
+    background-color: #F7F7F7;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
+    border-radius: 6px;
+}
+
+.senhaL, .senha{
+    width: 100%;
+    background-color: #f7f7f7;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
+    border-radius: 6px;
+    display: flex;
+}
+
+.senhaL input, .senha input{
+    background-color: unset;
+    box-shadow: unset;
+    margin-left: auto;
+    padding: 7px 0;
+}
+
+.senhaL i, .senha i{
+    margin: auto 0;
+    margin-left: auto;
+    margin-right: 10px;
+    font-size: 14px;
+    color: var(--cinza);
+    cursor: pointer;
+}
+
+form input::placeholder{
+    text-align: center;
+    color: #BCBCBC;
+}
+
+button{
+    width: 148px;
+    padding: 8px 0;
+    text-decoration: none;
+    font-size: 1.5rem;
+    background-color: var(--vermelho);
+    text-align: center;
+    border-radius: 6px;
+    color: #ffffff;
+    box-shadow: 0px 7px 6px 0px #00000033;
+    border: none;
+    margin: 0 auto;
+}
+
+@media screen and (min-width: 768px){
+
+    body{
+        background-size: 217px, auto, 560px;
+    }
+
+    main{
+        width: 552px;
+    }
+
+    section{
+        width: 552px;
+    }
+    
+   form{
+    width: 552px;
+   }
+
+   .senhaL, .senha{
+    width: 362px;
+    margin: 0 auto;
+   }
+}

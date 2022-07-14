@@ -1,0 +1,11 @@
+section svg{
+    width: 187px;
+    height: 47px;
+}
+
+@media screen and (min-width: 1440px){
+    section svg{
+        width: 260px;
+        height: 64px;
+    }
+}

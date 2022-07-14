@@ -1,0 +1,97 @@
+@import url("./background.css");
+@import url("./header.css");
+@import url("./footer.css");
+@import url("./var.css");
+@import url("./cadastro.css");
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url("../img/backgroundPata.png"), url('../img/backgroundRight.png'), url('../img/backgroundLeft.png');
+    background-position: top right, right, left top;
+    background-size: 120px, 82px, 370px;
+    background-color: #ffff;
+}
+
+section{
+    height: 400px;
+}
+
+section svg{
+    margin: 0 auto;
+}
+
+form{
+    width: 250px;
+    height: 250px;
+}
+
+form div{
+    display: flex;
+    height: max-content;
+    flex-direction: column;
+    justify-content: center;
+}
+
+form a{
+    color: var(--vermelho);
+    margin: 0 auto;
+    margin-top: 8px;
+}
+
+.senhaLogin{
+    width: 100%;
+    background-color: #f7f7f7;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
+    border-radius: 6px;
+    display: flex; 
+    flex-direction: unset;
+}
+
+.senhaLogin input{
+    background-color: unset;
+    box-shadow: unset;
+    margin-left: auto;
+    padding: 7px 0;
+}
+
+.senhaLogin i{
+    margin: auto 0;
+    margin-left: auto;
+    margin-right: 10px;
+    font-size: 14px;
+    color: var(--cinza);
+    cursor: pointer;
+}
+
+button{
+    width: unset;
+    padding: 8px 49px;
+}
+
+@media screen and (min-width: 768px){
+
+    body{
+        background-size: 217px, auto, 560px;
+    }
+
+    main{
+        width: 552px;
+    }
+
+    section{
+        width: 552px;
+    }
+    
+   form{
+    width: 552px;
+   }
+
+   .senhaLogin{
+    width: 362px;
+    margin: 0 auto;
+   }
+}
