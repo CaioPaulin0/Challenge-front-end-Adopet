@@ -75,14 +75,14 @@
 
                 <label>Senha</label>
                 <div class="senha">
-                    <input type="text" placeholder="Crie uma senha">
-                    <i class="fa-regular fa-eye-slash"></i>
+                    <input type="text" placeholder="Crie uma senha" id="password">
+                    <i class="fa-regular fa-eye-slash" id="eye" onclick="toggle()"></i>
                 </div>
                 
                 <label>Confirmar sua senha</label>
                 <div class="senhaL">
-                    <input type="text" placeholder="Repita a senha criada acima">
-                    <i class="fa-regular fa-eye-slash"></i>
+                    <input type="text" placeholder="Repita a senha criada acima" id="passwordR" >
+                    <i class="fa-regular fa-eye-slash" id="eyeR" onclick="toggleRepeate()"></i>
                 </div>
 
                 <button type="submit">Cadastrar</button>
@@ -97,5 +97,6 @@
     </footer>
 
     <script src="https://kit.fontawesome.com/820c67e293.js" crossorigin="anonymous"></script>
+    <script src="../javascript/password.js"></script>
 </body>
 </html>
