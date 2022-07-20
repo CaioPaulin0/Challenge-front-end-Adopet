@@ -1,23 +1,35 @@
 import EmailValidate from "./validation.js"
 import Password from "./repeatPassword.js"
 
-const cadastroObj = {
-    email: String,
-    nome: String,
-    senha: String
+function Cliente(email,nome,senha,foto,cidade,sobre){
+    this.email = email;
+    this.nome = nome;
+    this.senha = senha;
+    this.foto = foto;
+    this.cidade = cidade;
+    this.sobre = sobre;
+
+    return
 }
 
 const form = document.getElementById('cadastroFormulario')
 
-form.addEventListener('submit', (e) => {
+let localStoreArray = []
 
+form.addEventListener('submit', (e) => {
     const $ = document.querySelector.bind(document)
 
-    cadastroObj.email = EmailValidate("email")
-    cadastroObj.nome = $("#nome").value
-    //cadastroObj.senha = $("#password").value//
-    cadastroObj.senha = Password("password","passwordR")
-
-    console.log(cadastroObj)
+    let ClienteData = new Cliente(EmailValidate("email"),$("#nome").value,Password("password","passwordR"),'','','')
+    
+    if(ClienteData.email === undefined || ClienteData.nome === '' || ClienteData.senha === undefined){
+        console.log("algum valor estar invalido")
+        return
+    }
+    else{
+        localStorage.getItem("cliente")
+        localStoreArray.push(ClienteData)
+        localStorage.setItem("cliente", JSON.stringify(localStoreArray))
+    }
+    
     e.preventDefault()
 })
