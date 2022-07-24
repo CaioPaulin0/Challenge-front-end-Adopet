@@ -2,19 +2,18 @@
 
 function nome(data){
     let nome = document.querySelector('.campoNome')
-    nome.innerHTML = `<p> caio <p>`
+    nome.innerHTML = `<p>${data.nome} <p>`
 
     return nome
 }
 
-let dado = {}
-
-export default function Perfil(data) {
+function Perfil(data) {
 
     if(!data){
         console.log('nenhuma info')
         return
     } else{
-        return dado = data
+        nome(data)
+        return
     }
 }

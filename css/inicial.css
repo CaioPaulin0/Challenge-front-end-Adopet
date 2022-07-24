@@ -53,7 +53,7 @@
 
 .buttonsDiv{
     width: max-content;
-    height: 112px;
+    height: max-content;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -71,6 +71,7 @@
     color: #ffffff;
     box-shadow: 0 7px 6px 0px #00000033;
     margin: 0 auto;
+    margin-bottom: 5px;
 }
 
 .buttonsDiv a:hover{

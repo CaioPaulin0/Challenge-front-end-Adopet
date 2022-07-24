@@ -10,10 +10,11 @@ form.addEventListener('submit', (e) => {
 
     if (storelogin.senha == senha.value && storelogin.email === email.value) {
         alert('logado com sucesso')
+        return
     }
     else {
         alert('Dados incorreto')
     }
-    
+
     e.preventDefault()
 })
