@@ -22,14 +22,14 @@ form.addEventListener('submit', (e) => {
     let ClienteData = new Cliente(EmailValidate("email"),$("#nome").value,Password("password","passwordR"),'','','')
     
     if(ClienteData.email === undefined || ClienteData.nome === '' || ClienteData.senha === undefined){
-        console.log("algum valor estar invalido")
+        e.preventDefault()
         return
     }
     else{
         localStorage.getItem("cliente")
         localStoreArray.push(ClienteData)
         localStorage.setItem("cliente", JSON.stringify(localStoreArray))
+        alert('Cadastro concluido')
     }
     
-    e.preventDefault()
 })
